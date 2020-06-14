@@ -7,13 +7,13 @@ The instructions to run the model on high processing computer are:
 
 Change the following code in your shell script to your email id-
 ### Specify email address to use for notification.
-#PBS -M <your webmail id>
+  `#PBS -M <your webmail id>`
 
 Running the code on high processing computer-
 
-  `cd (the folder where training data and model scripts are present)
-  sed -i -e 's/\r$//' job_model_binary.sh
-  qsub job_model_binary.sh`
+  `cd (the folder where training data and model scripts are present)`
+  `sed -i -e 's/\r$//' job_model_binary.sh`
+  `qsub job_model_binary.sh`
 
 To check error after the job ends:
 
